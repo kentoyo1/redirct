@@ -5,7 +5,7 @@
 
 
 <script type="text/javscript">
-alert(111);
+
 function GetRequest() {
 	var url = location.search; 
 	var theRequest = new Object();
@@ -19,6 +19,7 @@ function GetRequest() {
 	return theRequest;
 }
 $(document).ready(function () {
+alert(111);
     var Request = new Object();
     Request = GetRequest();
     var val= Request["url"];  
