@@ -2,11 +2,7 @@
 <html><head></head>
 <body>1112221</body>
 </html>
-
-
-<script type="text/javscript">
-
- 
+<script type='text/javascript'>
 var request = (function (){
 	var obj = {};
 	var arr = window.location.search.slice(1).split("&");
@@ -14,8 +10,8 @@ var request = (function (){
 		var nv = arr[i].split("=");
 		obj[decodeURIComponent(nv[0]).toLowerCase()] = decodeURIComponent(nv[1]);
 	}
+	
 	return obj;	
 })();
- 
 location.href = request.page;
 </script>
