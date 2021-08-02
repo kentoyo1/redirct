@@ -12,14 +12,14 @@ window.location.replace(newUrl);
 function getParam() {
 
 
- var url = location.search; //获取url中"?"符后的字串
+ var url = location.search; 
 
  if (url.indexOf("?") != -1) {
  var str = url.substr(1);
  strs = str.split("&");
 
 
- newUrl = decodeURIComponent(strs[0].replace("userId=",""));
+ newUrl = decodeURIComponent(strs[0].replace("url=",""));
 
 
  }
